@@ -10,4 +10,4 @@ before_install:
 script:
     - pylint bin libfulltext
 after_success:
-    - pip install .
+    - pip install ${TRAVIS_BUILD_DIR}
